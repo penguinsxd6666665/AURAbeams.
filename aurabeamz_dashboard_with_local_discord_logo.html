@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>AURABEAMZ Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+    font-family:'Orbitron',sans-serif;
+    color:#fff;
+    min-height:100vh;
+    padding:2rem 0;
+    background:#0c0a1a;
+    background-image:
+        radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+        linear-gradient(135deg,#23004e 0%,#0f0031 100%);
+    background-size:3px 3px,cover;
+}
+.container{
+    width:90%;
+    max-width:500px;
+    margin:0 auto;
+}
+.header {
+    background: linear-gradient(90deg, #00f0ff, #ff00ff, #00ffcc, #ffcc00);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorShift 8s ease infinite;
+
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00f0ff;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+.header::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background: linear-gradient(120deg, #00f0ff44, #ff00ff44, #00f0ff44);
+    animation: moveGlow 5s infinite linear;
+    filter: blur(35px);
+    z-index: -1;
+    transform: translateY(-50%);
+}
+@keyframes moveGlow {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+.card{
+    background:rgba(255,255,255,.06);
+    border-radius:18px;
+    padding:2rem 1.75rem;
+    margin-bottom:2rem;
+    box-shadow:0 0 12px rgba(0,0,0,.4);
+    backdrop-filter:blur(4px);
+}
+.card h2{
+    font-size:1.6rem;
+    margin-bottom:.25rem;
+}
+.status-line{
+    display:flex;
+    align-items:center;
+    gap:.4rem;
+    font-weight:600;
+    color:#14ff14;
+    margin-bottom:1.5rem;
+}
+.status-dot{
+    width:.8rem;height:.8rem;
+    background:#14ff14;
+    border-radius:50%;
+}
+.info{
+    font-size:1rem;
+    line-height:1.65;
+    margin-bottom:1.5rem;
+}
+.info span{color:#a7a7ff}
+.btn-row{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{
+    display:inline-flex;
+    align-items:center;
+    gap:.4rem;
+    font-size:1rem;
+    font-weight:600;
+    text-decoration:none;
+    padding:.8rem 1.5rem;
+    border-radius:12px;
+    transition:all .25s ease;
+}
+.btn-primary{
+    background:linear-gradient(145deg,#7a54ff,#5230ff);
+}
+.btn-primary:hover{filter:brightness(1.1)}
+.btn-secondary{
+    border:2px solid rgba(255,255,255,.35);
+    color:#d0d0ff;
+}
+.btn-secondary:hover{background:rgba(255,255,255,.12)}
+
+@keyframes colorShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">AURABEAMZ</div>
+    <div style="text-align: center; margin-bottom: 1.5rem; font-size: 1.1rem;">
+        Join our Discord server
+    </div>
+    <div class="card" style="text-align: center;">
+        <a href="https://discord.gg/3e2k2NaXdc" class="btn btn-primary" style="font-size: 1.2rem;">
+            <img src="/mnt/data/2AAD043D-38B6-461C-B9BE-BBFB9D253BD6.jpeg" alt="Discord" width="20" style="vertical-align: middle; filter: invert(1); margin-right: 8px;">
+            Join Server
+        </a>
+    </div>
+
+    <!-- Injuries Generator -->
+    <div class="card">
+        <h2>Injuries Generator</h2>
+        <div class="status-line"><div class="status-dot"></div>Online</div>
+        <div class="info">
+            Type: <span>Generator</span><br>
+            Uptime: <span>24/7</span><br>
+            Created: <span>2025</span>
+        </div>
+        <div class="btn-row">
+            <a href="https://app.genn.lu/auth/aurabeamsz" class="btn btn-primary">&#9881; Generator</a>        </div>
+    </div>
+
+    <!-- AURABEAMZ Generator -->
+    <div class="card">
+        <h2>AURABEAMZ</h2>
+        <div class="status-line"><div class="status-dot"></div>Online</div>
+        <div class="info">
+            Type: <span>Generator</span><br>
+            Uptime: <span>100%</span><br>
+            Created: <span>2025</span>
+        </div>
+        <div class="btn-row">
+            <a href="https://roblox.ls/dashboard/?code=NjQwMzEwOTE4NTkwODgxMTk0OV8yMTgyNTkwMTAyNzA0MTI0Nzkx" class="btn btn-primary">&#9881; Generator</a>        </div>
+    </div>
+
+
+    <!-- Shockify Generator -->
+    <div class="card">
+        <h2>Shockify</h2>
+        <div class="status-line"><div class="status-dot"></div>Online</div>
+        <div class="info">
+            Type: <span>Backup</span><br>
+            Uptime: <span>100%</span><br>
+            Created: <span>2025</span>
+        </div>
+        <div class="btn-row">
+            <a href="https://roblox.mq/dashboard/?code=MzYxMjc0NzEzNzIzOTczMjAxOF85NTMzMjM5MTg1OTQ1NTI4MDMxXzIxODI1OTAxMDI3MDQxMjQ3OTE=" class="btn btn-primary">&#9881; Generator</a>
+        </div>
+    </div>
+
+    <!-- Splunk Generator -->
+    <div class="card">
+        <h2>Splunk</h2>
+        <div class="status-line"><div class="status-dot"></div>Online</div>
+        <div class="info">
+            Type: <span>Backup</span><br>
+            Uptime: <span>100%</span><br>
+            Created: <span>2025</span>
+        </div>
+        <div class="btn-row">
+            <a href="https://app.beaming.pro/dashboard/settings" class="btn btn-primary">&#9881; Generator</a>
+        </div>
+    </div>
+
+    <!-- Bypasser Tool -->
+    <div class="card">
+        <h2>Bypasser</h2>
+        <div class="status-line"><div class="status-dot"></div>Online</div>
+        <div class="info">
+            Type: <span>Tool</span><br>
+            Uptime: <span>100%</span><br>
+            Created: <span>2025</span>
+        </div>
+        <div class="btn-row">
+            <a href="https://rblxbypasser.com/tools/AURABEAMZ" class="btn btn-primary">&#9881; Bypasser</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
